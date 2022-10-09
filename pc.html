@@ -14,7 +14,7 @@
 </head>
 
 <body style="padding:0;margin:0;">
-    <iframe src="https://www.flowexchangeplus.ink/homes/#/home" width="100%" height="100%" frameborder="0" scrolling="auto" id="bi_iframe"
+    <iframe src="https://www.flowexchangeplus.ink/homes/#/home" width="100%" height="99vh" frameborder="0" scrolling="auto" id="bi_iframe"
         onload="adjustIframe();"></iframe>
 </body>
 
@@ -22,7 +22,7 @@
 <script>
     function adjustIframe() {
         var ifm = document.getElementById("bi_iframe");
-        ifm.height = document.documentElement.clientHeight;
+        ifm.height = document.documentElement.clientHeight -5;
         ifm.width = document.documentElement.clientWidth;
         setTimeout(() => {
             adjustIframe()
